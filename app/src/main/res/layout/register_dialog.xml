@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/register_top_layout"
+    android:paddingHorizontal="20dp">
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animation_background"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="centerCrop"
+                app:lottie_rawRes="@raw/write"
+                app:lottie_loop="true"
+                app:lottie_autoPlay="true"
+                app:lottie_repeatCount="5"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="등록"
+                android:padding="20dp"/>
+
+        </LinearLayout>
+
+
+
+        <View
+            android:layout_width="250dp"
+            android:layout_height="2dp"
+            android:background="#76B32A"
+            android:layout_gravity="center"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="제목"
+            android:textSize="15sp"
+            android:id="@+id/edit_reg_title"
+            android:backgroundTint="#76B32A"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="날짜를 선택해주세요:"
+                android:id="@+id/text_reg_date"
+                android:textSize="12sp"
+                android:layout_marginRight="60dp"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="선택"
+                android:textSize="12sp"
+                android:background="#00ffffff"
+                android:id="@+id/btn_date_select"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="시간을 선택해주세요:"
+                android:textSize="12sp"
+                android:id="@+id/text_reg_time"
+                android:layout_marginRight="60dp"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="선택"
+                android:textSize="12sp"
+                android:background="#00ffffff"
+                android:id="@+id/btn_time_select"
+                />
+
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="운동 종류를 입력해주세요:"
+            android:textSize="12sp"
+            android:id="@+id/edit_reg_type"
+            android:backgroundTint="#76B32A"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+
+            />
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="인원 수를 입력해주세요"
+            android:textSize="12sp"
+            android:id="@+id/edit_reg_max_number"
+            android:backgroundTint="#76B32A"
+            android:layout_marginBottom="10dp"
+            android:inputType="number"
+
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="등록!"
+            android:textSize="12sp"
+            android:layout_gravity="center"
+            android:id="@+id/btn_reg_register"
+            android:background="#00ffffff"
+            />
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:theme="@style/AppTheme"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animation_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            app:lottie_rawRes="@raw/background_mountain"
+            app:lottie_colorFilter="#54808080"
+            app:lottie_loop="true"
+            app:lottie_autoPlay="true" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animation_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            app:lottie_rawRes="@raw/main_loading"
+            app:lottie_loop="true"
+            android:visibility="gone"
+            app:lottie_colorFilter="@color/white"
+            app:lottie_autoPlay="true" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            >
+
+            <EditText
+                android:id="@+id/etext_main_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="50dp"
+                android:layout_marginBottom="50dp"
+                android:hint="ID"
+                android:text="jinsy731@naver.com"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/white"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/etext_main_pw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="50dp"
+                android:layout_marginBottom="50dp"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/white"
+                android:hint="PW"
+                android:text="qwer1234"
+                android:inputType="textPassword" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_main_login"
+                android:text="signin"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:layout_marginBottom="50dp"
+                android:background="#00ff0000"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Sign Up"
+                android:id="@+id/text_signup"
+                android:textColor="@color/white"
+               />
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+
+
+</LinearLayout>
